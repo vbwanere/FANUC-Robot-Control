@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.8)
-project(fanuc_description)
+project(fanuc_resources)
 
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY urdf meshes launch rviz
+  DIRECTORY urdf
   DESTINATION share/${PROJECT_NAME}
 )
 

@@ -1,7 +1,0 @@
-# ROS2 based control of FANUC M10iA Robot:
-
-Libraries needed:
-ROS 2 Humble
-ROS Industrial support files of FANUC M10iA
-OPW_Kinematics
-

@@ -8,14 +8,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/base_link.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/base_link.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_gray40 />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/base_link.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/base_link.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -23,14 +23,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_1.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_1.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_1.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -38,14 +38,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_2.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_2.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_2.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_2.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -53,14 +53,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_3.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_3.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_3.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -68,14 +68,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_4.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_4.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_4.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -83,14 +83,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_5.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_5.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_5.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_5.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -98,14 +98,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_6.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/visual/link_6.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <xacro:material_fanuc_black />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_6.stl"/>
+          <mesh filename="package://fanuc_description/meshes/m10ia/collision/link_6.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -147,7 +147,7 @@
       <limit lower="-3.31" upper="3.31" effort="0" velocity="6.98"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
-      <origin xyz="0.100 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="-1 0 0"/>
@@ -165,7 +165,7 @@
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
     <link name="${prefix}flange" />
     <joint name="${prefix}joint_6-flange" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0.1 0 0" rpy="0 0 0" />
       <parent link="${prefix}link_6" />
       <child link="${prefix}flange" />
     </joint>
@@ -173,7 +173,7 @@
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0" />
     <joint name="${prefix}link_6-tool0" type="fixed">
-      <origin xyz="0 0 0" rpy="${pi} ${-pi/2.0} 0" />
+      <origin xyz="0.1 0 0" rpy="${pi} ${-pi/2.0} 0" />
       <parent link="${prefix}flange" />
       <child link="${prefix}tool0" />
     </joint>
